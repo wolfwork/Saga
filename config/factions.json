@@ -1,0 +1,84 @@
+<<<<<<< HEAD
+{
+
+"hierarchyMin":1,
+"hierarchyMax":3,
+"hierarchyNames":{
+  "1":"recruits",
+  "2":"combatants",
+  "3":"war council"
+},
+"defaultRank":"novice",
+
+"factionOnlyPvp":true,
+
+"formationAmount":4,
+"formationSettlements":0,
+"minNameLength":3,
+"maxNameLength":6,
+
+"claimsPerMinute":{"x1":0,"y1":0.0,"x2":10,"y2":0.0015},
+"initClaims":1,
+"maxClaims":15,
+"claimSpeed":{"x1":0,"y1":0.2,"x2":250,"y2":0.0166},
+"unclaimSpeed":{"x1":0,"y1":0.4,"x2":250,"y2":0.0332},
+"memberSpeedMult":{"x1":1,"y1":0.5,"x2":5,"y2":3.0},
+"toClaimMembers":1,
+"claimPoints":{"x1":0,"y1":1.0,"x2":250,"y2":5.0},
+"openClaimedStorageAreas":true,
+
+"enableLimitedMembership":false,
+"warDeclareAfterPeaceMinutes":5760,
+"siegeWarRequired":true,
+"siegePrepareMinutes":1440,
+"siegePtsPerSecond":{"x1":-5,"y1":-0.00275,"x2":5,"y2":0.00225},
+"siegePtsPerSecondAffiliatedModifier":0.0005,
+"siegeLongRemindIntervalMinutes":30,
+"siegeShortRemindStartMinutes":10,
+"siegeShortRemindIntervalMinutes":1,
+"siegeInProgressRemindIntervalMinutes":5,
+"siegeEnableNoSettleDisband":false
+
+=======
+{
+
+"hierarchyMin":1,
+"hierarchyMax":3,
+"hierarchyNames":{
+  "1":"recruits",
+  "2":"combatants",
+  "3":"war council"
+},
+"defaultRank":"novice",
+
+"factionOnlyPvp":true,
+
+"formationAmount":4,
+"formationSettlements":0,
+"minNameLength":3,
+"maxNameLength":6,
+
+"claimsPerMinute":{"x1":0,"y1":0.0,"x2":10,"y2":0.0015},
+"initClaims":1,
+"maxClaims":15,
+"claimSpeed":{"x1":0,"y1":0.2,"x2":250,"y2":0.0166},
+"unclaimSpeed":{"x1":0,"y1":0.4,"x2":250,"y2":0.0332},
+"memberSpeedMult":{"x1":1,"y1":0.5,"x2":5,"y2":3.0},
+"toClaimMembers":1,
+"claimPoints":{"x1":0,"y1":1.0,"x2":250,"y2":5.0},
+"openClaimedStorageAreas":true,
+
+"enableLimitedMembership":false,
+"warDeclareAfterPeaceMinutes":5760,
+"siegeWarRequired":true,
+"siegePrepareMinutes":1440,
+"siegePtsPerSecond":{"x1":-5,"y1":-0.00275,"x2":5,"y2":0.00225},
+"siegePtsPerSecondAffiliatedModifier":0.0005,
+"siegeLongRemindIntervalMinutes":30,
+"siegeShortRemindStartMinutes":10,
+"siegeShortRemindIntervalMinutes":1,
+"siegeInProgressRemindIntervalMinutes":5,
+"siegeEnableNoSettleDisband":false
+
+>>>>>>> 077be13b22fa6a73d023a156eb6cc0318a9ba1be
+}

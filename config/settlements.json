@@ -1,0 +1,87 @@
+<<<<<<< HEAD
+{
+
+"inactiveSetDays":7,
+
+"claimsPerMinute":{"x1":0,"y1":0.0,"x2":10,"y2":0.01},
+"initClaims":4,
+"maxClaims":250,
+"noDeleteSize":25,
+
+"buildPointsPerMinute":{"x1":0,"y1":0.0,"x2":10,"y2":0.0054},
+"initBuildPoints":6,
+"maxBuildPoints":135,
+
+"buildPoints":{"x1":0,"y1":6.0,"x2":250,"y2":135.0},
+
+"requiredActiveMembers":{"x1":0,"y1":0,"x2":250,"y2":25.0},
+"requiredBuildings":{
+  "town square":25,
+  "armoury":100,
+  "bowyer":100,
+  "academy":100
+},
+
+"hierarchyNames":{
+  "1":"commoners",
+  "2":"craftsmen",
+  "3":"nobility"
+},
+"defaultRole":"settler",
+
+"enabledSignColor":"DARK_GREEN",
+"disabledSignColor":"DARK_GRAY",
+"invalidSignColor":"DARK_RED",
+
+"formationAmount":2,
+"minNameLength":3,
+"maxNameLength":15,
+
+"memberOnlyCommands":["sethome"]
+
+}
+
+=======
+{
+
+"inactiveSetDays":7,
+
+"claimsPerMinute":{"x1":0,"y1":0.0,"x2":10,"y2":0.01},
+"initClaims":4,
+"maxClaims":250,
+"noDeleteSize":25,
+
+"buildPointsPerMinute":{"x1":0,"y1":0.0,"x2":10,"y2":0.0054},
+"initBuildPoints":6,
+"maxBuildPoints":135,
+
+"buildPoints":{"x1":0,"y1":6.0,"x2":250,"y2":135.0},
+
+"requiredActiveMembers":{"x1":0,"y1":0,"x2":250,"y2":25.0},
+"requiredBuildings":{
+  "town square":25,
+  "armoury":100,
+  "bowyer":100,
+  "academy":100
+},
+
+"hierarchyNames":{
+  "1":"commoners",
+  "2":"craftsmen",
+  "3":"nobility"
+},
+"defaultRole":"settler",
+
+"enabledSignColor":"DARK_GREEN",
+"disabledSignColor":"DARK_GRAY",
+"invalidSignColor":"DARK_RED",
+
+"formationAmount":2,
+"minNameLength":3,
+"maxNameLength":15,
+
+"memberOnlyCommands":["sethome"]
+
+}
+
+>>>>>>> 077be13b22fa6a73d023a156eb6cc0318a9ba1be

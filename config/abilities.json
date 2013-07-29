@@ -1,0 +1,587 @@
+{
+
+"normalAbilityCap":6,
+"maxAbilityScore":3,
+
+"baseEnergyPoins":100,
+"energyRegenPerFood":5,
+"regenDelaySeconds":2,
+"energyMinimumFood":5,
+
+"definitions":[
+  {"className":"org.saga.abilities.ChopDown",
+    "name":"chop down",
+    "itemRestrictions":["DIAMOND_AXE","GOLD_AXE","IRON_AXE","STONE_AXE"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":40.0,"x2":3,"y2":20.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "fortitude":{"x1":1,"y1":15.0,"x2":3,"y2":90.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["woodcutter"]},
+    "functions":{"tree size":{"x1":1,"y1":10.0,"x2":3,"y2":50.0}},
+    "briefDescription":"chops down a tree",
+    "fullDescription":"Falls the targeted tree. Upgrading the ability allows to cut down bigger trees.",
+    "usage":"rclick a tree with an axe"
+  },
+  
+  {"className":"org.saga.abilities.Trim",
+    "name":"trim",
+    "itemRestrictions":["SHEARS","DIAMOND_AXE","GOLD_AXE","IRON_AXE","STONE_AXE"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":40.0,"x2":3,"y2":20.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "fortitude":{"x1":1,"y1":15.0,"x2":3,"y2":90.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["woodcutter"]},
+    "functions":{
+      "greens size":{"x1":1,"y1":130.0,"x2":3,"y2":300.0},
+      "tool damage":{"x1":1,"y1":0.80,"x2":3,"y2":0.50}
+    },
+    "briefDescription":"trims leaves, flowers and grass",
+    "fullDescription":"Allows the player to cut down tree leaves, long grass and flower patches. Upgrading allows to cut down a larger area.",
+    "usage":"rclick with shears or axe"
+  },
+  
+  {"className":"org.saga.abilities.Silent",
+    "name":"silent",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "cooldown":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":0.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "fortitude":{"x1":1,"y1":5.0,"x2":3,"y2":30.0},
+      "luck":{"x1":1,"y1":10.0,"x2":3,"y2":60.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["woodcutter"]},
+    "functions":{"distance multiplier":{"x1":1,"y1":0.90,"x2":3,"y2":0.60}},
+    "briefDescription":"decreases mob aggro range",
+    "fullDescription":"Reduces the radius at which hostile mobs can spot the player.",
+    "usage":"automatic"
+  },
+  
+  
+  
+  {"className":"org.saga.abilities.Dig",
+    "name":"dig",
+    "itemRestrictions":["DIAMOND_SPADE","GOLD_SPADE","IRON_SPADE","STONE_SPADE"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":60.0,"x2":3,"y2":30.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "constitution":{"x1":1,"y1":5.0,"x2":3,"y2":45.0},
+      "fortitude":{"x1":1,"y1":5.0,"x2":3,"y2":45.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["farmer"]},
+    "functions":{
+      "radius":{"x1":1,"y1":1.0,"x2":3,"y2":2.0},
+      "random block":{"x1":1,"y1":8.0,"x2":3,"y2":17.0}
+    },
+    "briefDescription":"digs dirt and sand",
+    "fullDescription":"Digs a huge hole in dirt or sand. Hole size increases as the ability is upgraded.",
+    "usage":"rclick with a spade"
+  },
+  
+  {"className":"org.saga.abilities.Harvest",
+    "name":"harvest",
+    "itemRestrictions":["DIAMOND_HOE","GOLD_HOE","IRON_HOE","STONE_HOE"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":40.0,"x2":3,"y2":20.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "constitution":{"x1":1,"y1":5.0,"x2":3,"y2":45.0},
+      "fortitude":{"x1":1,"y1":5.0,"x2":3,"y2":45.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["farmer"]},
+    "functions":{"range":{"x1":1,"y1":20.0,"x2":3,"y2":60.0}},
+    "briefDescription":"cuts wheat and reeds",
+    "fullDescription":"Cuts down wheat and reeds around the player. Affected area increases as the ability gets upgraded.",
+    "usage":"rclick with a hoe"
+  },
+  
+  {"className":"org.saga.abilities.Shearing",
+    "name":"shearing",
+    "itemRestrictions":["SHEARS"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":10,"x2":3,"y2":5},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "fortitude":{"x1":1,"y1":5.0,"x2":3,"y2":15.0},
+      "constitution":{"x1":1,"y1":5.0,"x2":3,"y2":15.0},
+      "luck":{"x1":1,"y1":5.0,"x2":3,"y2":60.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["farmer"]},
+    "functions":{
+      "bonus wool":{"x1":1,"y1":2.0,"x2":3,"y2":4.0},
+      "bonus mushrooms":{"x1":1,"y1":2.5,"x2":3,"y2":5.0}
+    },
+    "briefDescription":"shearing is more effective",
+    "fullDescription":"Shearing sheep gives more wool.",
+    "usage":"automatic"
+  },
+  
+  
+  
+  {"className":"org.saga.abilities.HeavySwing",
+    "name":"heavy swing",
+    "itemRestrictions":["DIAMOND_PICKAXE","GOLD_PICKAXE","IRON_PICKAXE"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":60.0,"x2":3,"y2":30.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0,"x2":3,"y2":0.0},
+    "attributeRequirements":{
+      "constitution":{"x1":1,"y1":15.0,"x2":3,"y2":90.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["miner"]},
+    "functions":{
+      "size":{"x1":0,"y1":1.0,"x2":3,"y2":60.0},
+      "crumble":{"x1":0,"y1":5.0,"x2":50,"y2":10.0}
+    },
+    "briefDescription":"breaks stone",
+    "fullDescription":"Punches a hole in stone. Hole size increases when the ability is upgraded.",
+    "usage":"rclick stone with a pickaxe"
+  },
+  
+  {"className":"org.saga.abilities.Satiation",
+    "name":"satiation",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":0.0},
+    "cooldownTicks":0,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{
+      "constitution":{"x1":1,"y1":15.0,"x2":3,"y2":90.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["miner"]},
+    "functions":{
+      "gain multiplier":{"x1":0,"y1":1.25,"x2":3,"y2":1.75},
+      "lose multiplier":{"x1":0,"y1":0.80,"x2":3,"y2":0.60}
+    },
+    "briefDescription":"food bar is filled faster and drained slower",
+    "fullDescription":"Makes it so less food is consumed and more is gained.",
+    "usage":"automatic"
+  },
+  
+  {"className":"org.saga.abilities.PlaceLadder",
+    "name":"place ladder",
+    "itemRestrictions":["LADDER"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":30.0,"x2":3,"y2":15.0},
+    "attributeRequirements":{
+      "constitution":{"x1":1,"y1":5.0,"x2":3,"y2":30.0},
+      "luck":{"x1":1,"y1":10.0,"x2":3,"y2":60.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["miner"]},
+    "functions":{
+      "ladder height":{"x1":1,"y1":3.0,"x2":3,"y2":7.0}
+    },
+    "briefDescription":"places a ladder",
+    "fullDescription":"Places a ladder on the top of the targeted block. Upgraded version allows to place higher ladders.",
+    "usage":"rclick block top"
+  },
+  
+  {"className":"org.saga.abilities.TakeLadder",
+    "name":"take ladder",
+    "itemRestrictions":[],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":30.0,"x2":3,"y2":15.0},
+    "attributeRequirements":{
+      "constitution":{"x1":1,"y1":5.0,"x2":3,"y2":30.0},
+      "luck":{"x1":1,"y1":10.0,"x2":3,"y2":60.0}
+    },
+    "buildingsRequired":{},
+    "proficienciesRequired":{1:["miner"]},
+    "functions":{
+      "ladder height":{"x1":1,"y1":3.0,"x2":3,"y2":7.0}
+    },
+    "briefDescription":"takes a ladder",
+    "fullDescription":"Removes the ladder from the targeted block. Upgrading allows to remove higher ladders.",
+    "usage":"rclick upper or lower block top"
+  },
+  
+  
+  
+  {"className":"org.saga.abilities.Bash",
+    "name":"disarm",
+    "itemRestrictions":["DIAMOND_SWORD","GOLD_SWORD","IRON_SWORD","STONE_SWORD","BOW"],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":20},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":14.0,"x2":3,"y2":7.0},
+    "attributeRequirements":{ "strength":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{},
+    "proficienciesRequired":{},
+    "functions":{
+      "melee disarm chance":{"x1":1,"y1":0.05,"x2":3,"y2":0.15},
+      "ranged disarm chance":{"x1":1,"y1":0.10,"x2":3,"y2":0.30}
+    },
+    "briefDescription":"shifts targets weapon",
+    "fullDescription":"Switches target players weapons slot. Upgrading increases disarm chance.",
+    "usage":"random chance when the target player gets hit"
+  },
+  
+  {"className":"org.saga.abilities.Dart",
+    "name":"dart",
+    "itemRestrictions":["ARROW"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"ARROW",
+    "usedAmount":{"x1":1,"y1":1.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{ "precision":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{},
+    "proficienciesRequired":{},
+    "functions":{"speed":{"x1":1,"y1":2.0,"x2":3,"y2":4.0}},
+    "briefDescription":"shoots an arrow",
+    "fullDescription":"Shoots an arrow without a bow. Speed is increased when the ability is upgraded.",
+    "usage":"rclick with an arrow"
+  },
+  
+  {"className":"org.saga.abilities.Fireball",
+    "name":"fireball",
+    "itemRestrictions":["PAPER"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"COAL",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":20.0,"x2":3,"y2":10.0},
+    "cooldownTicks":50,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{ "willpower":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{},
+    "proficienciesRequired":{},
+    "functions":{"speed":{"x1":1,"y1":0.70,"x2":3,"y2":2.0}},
+    "briefDescription":"shoots a fireball",
+    "fullDescription":"Shoots a fireball. Upgrading increases speed.",
+    "usage":"rclick with paper"
+  },
+  
+  {"className":"org.saga.abilities.Force",
+    "name":"force",
+    "itemRestrictions":["BOOK"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":40.0,"x2":3,"y2":20.0},
+    "cooldownTicks":50,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "willpower":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{},
+    "proficienciesRequired":{},
+    "functions":{
+      "radius":{"x1":1,"y1":5.0,"x2":3,"y2":9.0},
+      "power":{"x1":1,"y1":1.5,"x2":3,"y2":2.0}
+    },
+    "briefDescription":"pushes nearby targets away",
+    "fullDescription":"Pushes all hostiles away. Upgrading increases radius and power.",
+    "usage":"rclick with a book"
+  },
+  
+  
+  
+  {"className":"org.saga.abilities.Berserk",
+    "name":"berserk",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":25,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "strength":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["armoury"]},
+    "proficienciesRequired":{1:["warrior","knight"]},
+    "functions":{
+      "hits required":{"x1":1,"y1":10,"x2":3,"y2":6},
+      "damage multiplier":{"x1":1,"y1":1.75,"x2":3,"y2":2.25}
+    },
+    "briefDescription":"charges a strong hit",
+    "fullDescription":"High damage attack which charges when damage is dealt and resets when damage is taken. Upgraded version deals more damage and requires less hits to charge.",
+    "usage":"don't get damaged"
+  },
+  
+  {"className":"org.saga.abilities.Parry",
+    "name":"parry",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":0,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "strength":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["armoury"]},
+    "proficienciesRequired":{1:["warrior","knight"]},
+    "functions":{
+      "facing half angle":{"x1":1,"y1":45.0,"x2":3,"y2":100.0},
+      "active time":{"x1":1,"y1":0.75,"x2":3,"y2":1.75}
+    },
+    "briefDescription":"short immunity after block",
+    "fullDescription":"Grants a short immunity to damage after a successful block. Upgrading increases the angle at which the ability is effective and immunity time.",
+    "usage":"block with a sword"
+  },
+  
+  {"className":"org.saga.abilities.Counterattack",
+    "name":"counter",
+    "itemRestrictions":["DIAMOND_SWORD","GOLD_SWORD","IRON_SWORD","STONE_SWORD"],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":50,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{ "strength":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["armoury"]},
+    "proficienciesRequired":{1:["warrior","knight"]},
+    "functions":{
+      "facing half angle":{"x1":1,"y1":45.0,"x2":3,"y2":100.0}
+    },
+    "briefDescription":"redirects melee damage",
+    "fullDescription":"Reflects enemy damage on successful block. Upgrading increases the angle at which the ability is effective.",
+    "usage":"block with a sword"
+  },
+  
+  {"className":"org.saga.abilities.Charge",
+    "name":"charge",
+    "itemRestrictions":["DIAMOND_SWORD","GOLD_SWORD","IRON_SWORD","STONE_SWORD"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":80,"x2":3,"y2":50},
+    "cooldownTicks":50,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{ "strength":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["armoury"]},
+    "proficienciesRequired":{1:["warrior","knight"]},
+    "functions":{
+      "speed":{"x1":1,"y1":1.5,"x2":3,"y2":2.5},
+      "duration":{"x1":1,"y1":0.75,"x2":3,"y2":1.0},
+      "push radius":{"x1":1,"y1":2.0},
+      "push speed":{"x1":1,"y1":1.0},
+      "push damage":{"x1":1,"y1":5.0} 
+    },
+    "briefDescription":"charges towards target",
+    "fullDescription":"Charges the player towards the target. Increased speed and duration when upgraded.",
+    "usage":"sprint and block"
+  },
+
+  {"className":"org.saga.abilities.Crush",
+    "name":"crush",
+    "itemRestrictions":["DIAMOND_SWORD","GOLD_SWORD","IRON_SWORD","STONE_SWORD"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":0.70,"x2":3,"y2":0.40},
+    "cooldownTicks":50,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{ "strength":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["armoury"]},
+    "proficienciesRequired":{1:["warrior","knight"]},
+    "functions":{
+      "vertical speed":{"x1":1,"y1":0.15},
+      "horizontal speed":{"x1":1,"y1":0.0},
+      "jump duration":{"x1":1,"y1":0.15},
+      "down speed":{"x1":1,"y1":-1.5},
+      "damage threshold":{"x1":0,"y1":5.0},
+      "push radius":{"x1":1,"y1":2.0,"x2":3,"y2":4.0},
+      "push speed":{"x1":1,"y1":1.0,"x2":3,"y2":3.0},
+      "push damage":{"x1":1,"y1":5.0,"x2":3,"y2":5.0} 
+    },
+    "briefDescription":"jumps and crushes hostiles",
+    "fullDescription":"Falling on mobs or players damage them. Increased radius and power when upgraded.",
+    "usage":"jump and block"
+  },
+  
+  
+  {"className":"org.saga.abilities.Ricochet",
+    "name":"ricochet",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":30,"x2":3,"y2":10},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0},
+    "attributeRequirements":{ "precision":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["bowyer"]},
+    "proficienciesRequired":{1:["archer","marksman"]},
+    "functions":{"range":{"x1":1,"y1":5.0,"x2":3,"y2":8.0}},
+    "briefDescription":"arrows ricochet",
+    "fullDescription":"Ricochets arrows off surfaces towards hostiles. Upgraded version has higher ricochet range.",
+    "usage":"miss target with an arrow"
+  },
+
+  {"className":"org.saga.abilities.Backstab",
+    "name":"backstab",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":100.0,"x2":3,"y2":50.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "precision":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["bowyer"]},
+    "proficienciesRequired":{1:["archer","marksman"]},
+    "functions":{
+      "facing half angle":{"x1":1,"y1":55.0,"x2":3,"y2":100.0},
+      "damage multiplier":{"x1":1,"y1":1.5,"x2":3,"y2":2.0},
+      "armour penetration":{"x1":1,"y1":0.5,"x2":3,"y2":0.5},
+      "enchant penetration":{"x1":1,"y1":0.5,"x2":3,"y2":0.5}
+    },
+    "briefDescription":"increased damage and armour penetration",
+    "fullDescription":"Deals high amount of damage while ignoring some armour protection. Increased damage, attack angle and penetration when upgraded.",
+    "usage":"hit from behind"
+  },
+  
+  {"className":"org.saga.abilities.ForceBow",
+    "name":"force bow",
+    "itemRestrictions":["BOW"],
+    "activationAction":"NONE",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":15.0,"x2":3,"y2":5.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "precision":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["bowyer"]},
+    "proficienciesRequired":{1:["archer","marksman"]},
+    "functions":{"speed":{"x1":1,"y1":1.5,"x2":3,"y2":3.0}},
+    "briefDescription":"target gets pushed back by arrows",
+    "fullDescription":"Makes bow push back target on successful hit. Increased power when upgraded.",
+    "usage":"when arrow hits the target"
+  },
+  
+  
+  {"className":"org.saga.abilities.Stoneskin",
+    "name":"stoneskin",
+    "itemRestrictions":[],
+    "activationAction":"NONE",
+    "usedItem":"COBBLESTONE",
+    "usedAmount":{"x1":1,"y1":1.0},
+    "usedEnergy":{"x1":1,"y1":15.0,"x2":3,"y2":5.0},
+    "cooldownTicks":0,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "willpower":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["academy"]},
+    "proficienciesRequired":{1:["mage","wizard"]},
+    "functions":{
+      "damage multiplier":{"x1":1,"y1":0.25,"x2":3,"y2":0.75}
+    },
+    "briefDescription":"damage resistance",
+    "fullDescription":"Provides higher damage resistance.",
+    "usage":"passive"
+  },
+  
+  {"className":"org.saga.abilities.Meteors",
+    "name":"meteors",
+    "itemRestrictions":[GHAST_TEAR],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"GHAST_TEAR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":100.0,"x2":3,"y2":50.0},
+    "cooldownTicks":100,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "willpower":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["academy"]},
+    "proficienciesRequired":{1:["mage","wizard"]},
+    "functions":{
+      "density":{"x1":1,"y1":1.0,"x2":8,"y2":0.25},
+      "density multiplier":{"x1":1,"y1":0.75,"x2":3,"y2":1.5},
+      "speed":{"x1":1,"y1":1.0,"x2":3,"y2":1.5}
+    },
+    "briefDescription":"calls meteors from the sky",
+    "fullDescription":"Spawns a meteor shower. Meteor speed and amount increases when upgraded.",
+    "usage":"rclick with a ghast tear"
+  },
+  
+  
+  
+  {"className":"org.saga.abilities.Lightning",
+    "name":"lightning",
+    "itemRestrictions":[REDSTONE],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"REDSTONE",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":100.0,"x2":3,"y2":50.0},
+    "cooldownTicks":100,
+    "cooldown":{"x1":0,"y1":0.0},
+    "attributeRequirements":{ "willpower":{"x1":1,"y1":15,"x2":3,"y2":90} },
+    "buildingsRequired":{3:["academy"]},
+    "proficienciesRequired":{1:["mage","wizard"]},
+    "functions":{
+      "damage":{"x1":1,"y1":6.0,"x2":3,"y2":15.0},
+      "damage range":{"x1":1,"y1":2.5,"x2":3,"y2":3.5},
+      "distance":{"x1":1,"y1":16.0,"x2":3,"y2":32.0}
+    },
+    "briefDescription":"calls a lightning bolt",
+    "fullDescription":"Spawns a lightning bolt. Upgraded version does more damage and has increased area of effect.",
+    "usage":"rclick with redstone"
+  },
+  
+  
+  
+  
+  {"className":"org.saga.abilities.Claim",
+    "name":"claim chunk",
+    "itemRestrictions":["FEATHER"],
+    "activationAction":"RIGHT_CLICK",
+    "usedItem":"AIR",
+    "usedAmount":{"x1":1,"y1":0.0},
+    "usedEnergy":{"x1":1,"y1":0.0},
+    "cooldownTicks":25,
+    "cooldown":{"x1":1,"y1":0.0,"x2":3,"y2":0.0},
+    "attributeRequirements":{ "luck":{"x1":1,"y1":0.0,"x2":3,"y2":30.0}  },
+    "buildingsRequired":{3:["town square"]},
+    "proficienciesRequired":{1:["lord"]},
+    "functions":{},
+    "briefDescription":"claims a chunk",
+    "fullDescription":"Claims a chunk for the settlement.",
+    "usage":"rclick with feather"
+  }
+]
+
+}
