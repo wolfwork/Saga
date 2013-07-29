@@ -168,11 +168,7 @@ public class Saga extends JavaPlugin implements MinuteTicker {
 		SagaLogger.load();
 
 		// Messages:
-<<<<<<< HEAD
-		SagaLogger.info("Saga 활성화중.");
-=======
 		SagaLogger.info("Enabling Saga.");
->>>>>>> 077be13b22fa6a73d023a156eb6cc0318a9ba1be
 
 		// Plugin manager:
 		final PluginManager pluginManager = getServer().getPluginManager();

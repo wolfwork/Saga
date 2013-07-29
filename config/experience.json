@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
 
 "abilityPointCost":1875,
@@ -48,55 +47,4 @@
 "spawnerEncPointMult":0.5,
 "spawnerExpMult":0.01
 
-=======
-{
-
-"abilityPointCost":1875,
-"attributePointCost":150,
-
-"maxExp":30000,
-"expGainMultiplier":{"x1":0,"y1":1.0,"x2":30000.0,"y2":0.025},
-
-"blockExp":{
-  "DIAMOND_ORE":{"0":16.0},
-  "LAPIS_ORE":{"0":10.0},
-  "GOLD_ORE":{"0":6.0},
-  "IRON_ORE":{"0":2.5},
-  "COAL_ORE":{"0":0.75},
-  "STONE":{"0":0.02},
-  "LOG":{"0":1.30, "1":1.30, "2":1.30, "3":1.30},
-  "SUGAR_CANE_BLOCK":{"0":0.1937},
-  "CROPS":{"7":0.1937}
-},
-
-"playerExp":{"x1":0,"y1":1.0,"x2":100,"y2":50.0},
-
-"creatureExp":{
-
-  "creeper":18.0,
-  "enderman":10.0,
-  "ghast":20.0,
-  "blaze":10.0,
-  "bigslime":12.5,
-  "smallslime":5.0,
-  "pigzombie":8.0,
-  "zombie":6.75,
-  "skeleton":6.75,
-  "spider":6.75,
-  "cavespider":6.75,
-  "wolf":4,
-  "default":1.25,
-
-  "cow":3.0,
-  "pig":3.0,
-  "sheep":3.0
-
-},
-
-"abilityExp":{},
-
-"spawnerEncPointMult":0.5,
-"spawnerExpMult":0.01
-
->>>>>>> 077be13b22fa6a73d023a156eb6cc0318a9ba1be
 }

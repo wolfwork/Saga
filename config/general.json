@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
 
 "saveInterval":120,
@@ -38,45 +37,4 @@
 
 "commandsOverride":{}
 
-=======
-{
-
-"saveInterval":120,
-
-"adminChatNameColor":"DARK_GREEN",
-"adminChatMessageColor":"GREEN",
-"specialChatNameColor":"DARK_AQUA",
-"specialChatMessageColor":"AQUA",
-"settlementFormat":"#",
-"factionFormat":"#-",
-"rankFormat":"[#] ",
-"roleFormat":"#",
-
-"harmfulSplashPotions":[16388,16392,16394,16396,16420,16428,16452,16456],
-"statisticsUpdateAge":33600000,
-
-"blockPlaceData":{
-  "COAL_ORE":9,
-  "IRON_ORE":9,
-  "GOLD_ORE":9,
-  "DIAMOND_ORE":9,
-  "SUGAR_CANE_BLOCK":1,
-  "LAPIS_ORE":9
-},
-
-"stopCreeperExplosions":true,
-"playerFireballDestruction":0.5,
-
-"guardRuneEnabled":true,
-"guardRuneDisableWorlds":["creative"],
-
-"defaultWorld":"world",
-"disableWorlds":["creative"],
-
-"xrayMinStone":1500,
-"xrayDiamondRatio":0.010,
-
-"commandsOverride":{}
-
->>>>>>> 077be13b22fa6a73d023a156eb6cc0318a9ba1be
 }

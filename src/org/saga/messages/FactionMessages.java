@@ -227,15 +227,9 @@ public class FactionMessages {
 		for (int i = 0; i < colours.length; i++) {
 			
 			if( i!= 0) rString.append(", ");
-<<<<<<< HEAD
-
-			rString.append(colours[i].name().toLowerCase().replace("_", " "));
-
-=======
 			
 			rString.append(colours[i].name().toLowerCase().replace("_", " "));
 			
->>>>>>> 077be13b22fa6a73d023a156eb6cc0318a9ba1be
 		}
 		
 		rString.insert(0, faction.getColour2());
